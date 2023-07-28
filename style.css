@@ -27,19 +27,36 @@ body {
 }
 
 .navbar{
-    padding-top: 1.5rem;
+    /* position: fixed; */
+    /* width: 100%; */
+    /* top: 0; */
+    /* left: 0; */
+    padding-top: 1.5rem; 
     padding-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
     
 }
-
-.navbar_ul{
+.navbar__container{
+    /* width: 70%; */
+}
+.navbar_items{
     display: flex;
+    /* flex-direction: ; */
     list-style: none;
-    justify-content: flex-end;
-    align-items: center;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
     gap: 2em;
     margin: 0px;
-
+    
+}
+.navbar_ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    text-transform: uppercase;
+    font-weight: 550;
 }
 
 a{
@@ -65,7 +82,7 @@ ul
 img{
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: .7em;
+    margin-left: .1em;
     border-radius: 5px;
     width: 400px;
     height: 400px;
@@ -209,6 +226,7 @@ img{
 .project__item__container img{
     
     width: 250px;
+    border-radius: 5px;
     height: 250px;
     margin: 0px;
 
@@ -223,6 +241,42 @@ img{
 .project__link svg{
     width: 1.5em;
     height: 1.5em;
+}
+.contact{
+    margin-top: 2em;
+}
+.contact_container{
+    display: flex;
+}
+.contact_item_container{
+    flex: 1;
+}
+.contact__details{
+    display: flex;
+    flex-direction: column; 
+    align-content: space-around;
+    gap: 20px;
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact_form input[type=text]{
+    padding: 12px 20px;
+    border: 2px solid black;
+} 
+
+button{
+    border: none;
+    background-color: #fd5526;
+    text-align: center;
+    padding: 1.1em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
 }
 
 @media (max-width:1164px){
@@ -263,6 +317,14 @@ img{
     .skills__container{
         flex-direction: column;
         align-items: normal;
+    }
+
+    .project__child_container{
+        flex-direction: column;
+    }
+    .contact_container{
+        flex-direction: column;
+        gap: 15px;
     }
     
 }
