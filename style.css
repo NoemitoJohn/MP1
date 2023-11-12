@@ -302,9 +302,11 @@ button{
     letter-spacing: 0;
     color: #111827;
 }
+
 .cv:hover {
     color: #030712;
 }
+
 @media (max-width:1164px){
     .about__subtitle{
        
