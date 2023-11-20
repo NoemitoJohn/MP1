@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
 *{
     line-height: 1.5;
 }
@@ -12,35 +13,30 @@ p, h1, h4, h3, h2 {
 body {
     margin: 0px;
     font-size: large;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins','Open Sans', sans-serif;
 
 }
 
-.separator_strong{
+.separator_strong {
     margin-top: 1em;
     margin-bottom: 1em;
     border: 1px solid gray;
 }
-.separator_light{
+.separator_light {
     margin-top: 0.2em;
     margin-bottom: 0.6em;
     border: 1px solid lightgray;
 }
 
-.navbar{
-    /* position: fixed; */
-    /* width: 100%; */
-    /* top: 0; */
-    /* left: 0; */
+.navbar { 
+
     padding-top: 1.5rem; 
     padding-bottom: 1.5rem;
     margin-left: auto;
     margin-right: auto;
     
 }
-.navbar__container{
-    /* width: 70%; */
-}
+
 .navbar_items{
     display: flex;
     /* flex-direction: ; */
@@ -89,6 +85,9 @@ img{
     height: 400px;
     
 }
+tr {
+    text-align: center;
+}
 
 .about{
     display: flex;
@@ -116,8 +115,6 @@ img{
     
     
 }
-
-
 
 .about__details{
     display: flex;
@@ -212,23 +209,26 @@ img{
 
 }
 .project__child_container{
+    flex-direction: column;
     display: flex;
     gap: 10px;
 }
 .project__item__container{
     display: flex;
-    flex-direction: column;
     border: 1px solid lightgray;
     gap: .6em;
     padding: 0.3em;
     border-radius: 10px;
+
     flex: 1;
+}
+.text-center {
+    text-align: center;
 }
 .project__item__container img{
     
-    width: 250px;
     border-radius: 5px;
-    height: 250px;
+    height: 200px;
     margin: 0px;
 
 }
@@ -238,6 +238,12 @@ img{
     justify-content: space-between;
     gap: 10px;
     flex: 1;
+}
+.project__link{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 10px;
 }
 .project__link svg{
     width: 1.5em;
@@ -305,6 +311,8 @@ button{
 .cv:hover {
     color: #030712;
 }
+
+
 @media (max-width:1164px){
     .about__subtitle{
        
@@ -346,6 +354,7 @@ button{
     }
 
     .project__child_container{
+        
         flex-direction: column;
     }
     .contact_container{
